@@ -37,21 +37,21 @@ body
     }
 
   javascript:
-    // var slide_count = 20,  // how many slides you have
-    //   delay = 9000;        //delay between slides
+    var slide_count = 20,  // how many slides you have
+      delay = 9000;        //delay between slides
     
-    // function autoplay(){
-    //   var url = window.location.href;
-    //   var hash = parseInt(url.substring(url.indexOf("#") + 1));
+    function autoplay(){
+      var url = window.location.href;
+      var hash = parseInt(url.substring(url.indexOf("#") + 1));
         
-    //   if (isNaN(hash) || hash === slide_count ) window.location.href = "#0"; 
-    //   else {
-    //       $('.nav-next').trigger('click');
-    //   }
+      if (isNaN(hash) || hash === slide_count ) window.location.href = "#0"; 
+      else {
+          $('.nav-next').trigger('click');
+      }
       
-    // }
+    }
     
-    // setInterval(function() {autoplay()}, delay);
+     setInterval(function() {autoplay()}, delay);
 
   = javascript_include_tag "storyjs-embed.js"
   / -- END Timeline Embed--
