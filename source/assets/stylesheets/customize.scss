@@ -1,0 +1,54 @@
+h1#super-headline {
+  text-align: center;
+  display: block;
+  font-size: 48px;
+  color: #fff;
+  padding: 12px;
+  // border-top: 12px solid #ffc600;
+  background: #07294D;
+  font-family: Arial, tahoma, sans-serif;
+}
+
+.text {
+  width: 100% !important;
+  .container {
+    h2 {
+      color: #fff;
+      margin-bottom: 24px !important;
+      small {
+        color: #999;
+        font-size: 24px !important;
+      }
+    }
+
+    h3 {    
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.media {
+  width: 20% !important;
+  max-width: 20% !important;
+  min-width: 20% !important;
+  .media-wrapper {
+    .media-container {
+      .credit {
+        font-size: 20px !important;
+        margin-top: 20px !important;
+        text-align: center !important;
+      }
+      .caption { display: none; }
+    }
+  }
+}
+
+img.media-image {
+  max-width: 360px !important;
+}

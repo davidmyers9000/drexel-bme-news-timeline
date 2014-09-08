@@ -1,0 +1,57 @@
+doctype html
+html lang="en"
+
+head
+  title TimelineJS Embed
+  meta charset="utf-8"
+  meta name="description" content="TimelineJS Embed"
+  meta name="apple-mobile-web-app-capable" content="yes"
+  meta name="apple-touch-fullscreen" content="yes"
+  meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+
+  = stylesheet_link_tag "project"
+  / HTML5 shim, for IE6-8 support of HTML elements
+  /[if lt IE 9]
+    = javascript_include_tag "//html5shim.googlecode.com/svn/trunk/html5.js"
+
+body
+  / -- BEGIN Timeline Embed -- 
+  h1#super-headline Latest BIOMED News
+  #timeline-embed
+  / -- Override --
+  javascript:
+    var timeline_config = {
+      width:              '100%',
+      height:             '90%',
+      source:             'https://docs.google.com/spreadsheet/pub?key=1PWXmlnogZ6wscjmGORRm2P6FaJKldXNxO08sHK-VRZ4&output=html',
+      embed_id:           'timeline-embed',                      //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
+      start_at_end:       false,                                 //OPTIONAL START AT LATEST DATE
+      start_at_slide:     '1',                                   //OPTIONAL START AT SPECIFIC SLIDE
+      start_zoom_adjust:  '3',                                   //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
+      hash_bookmark:      true,                                  //OPTIONAL LOCATION BAR HASHES
+      debug:              true,                                  //OPTIONAL DEBUG TO CONSOLE
+      lang:               'en',                                  //OPTIONAL LANGUAGE
+      maptype:            'watercolor',                          //OPTIONAL MAP STYLE
+      css:                'assets/stylesheets/timeline.css',     //OPTIONAL PATH TO CSS
+      js:                 'assets/javascripts/timeline.js'       //OPTIONAL PATH TO JS
+    }
+
+  javascript:
+    // var slide_count = 20,  // how many slides you have
+    //   delay = 9000;        //delay between slides
+    
+    // function autoplay(){
+    //   var url = window.location.href;
+    //   var hash = parseInt(url.substring(url.indexOf("#") + 1));
+        
+    //   if (isNaN(hash) || hash === slide_count ) window.location.href = "#0"; 
+    //   else {
+    //       $('.nav-next').trigger('click');
+    //   }
+      
+    // }
+    
+    // setInterval(function() {autoplay()}, delay);
+
+  = javascript_include_tag "storyjs-embed.js"
+  / -- END Timeline Embed--
