@@ -4,7 +4,7 @@
   source:             'https://docs.google.com/spreadsheet/pub?key=1PWXmlnogZ6wscjmGORRm2P6FaJKldXNxO08sHK-VRZ4&output=html',
   embed_id:           'timeline-embed',                      //OPTIONAL USE A DIFFERENT DIV ID FOR EMBED
   start_at_end:       false,                                 //OPTIONAL START AT LATEST DATE
-  start_at_slide:     '1',                                   //OPTIONAL START AT SPECIFIC SLIDE
+  start_at_slide:     '0',                                   //OPTIONAL START AT SPECIFIC SLIDE
   start_zoom_adjust:  '3',                                   //OPTIONAL TWEAK THE DEFAULT ZOOM LEVEL
   hash_bookmark:      true,                                  //OPTIONAL LOCATION BAR HASHES
   debug:              true,                                  //OPTIONAL DEBUG TO CONSOLE
@@ -12,8 +12,8 @@
   maptype:            'watercolor',                          //OPTIONAL MAP STYLE
   css:                'assets/stylesheets/timeline-4da4af6a.css',     //OPTIONAL PATH TO CSS
   js:                 'assets/javascripts/timeline-152aaa59.js'       //OPTIONAL PATH TO JS
-}</script><script type="text/javascript">var slide_count = 20,  // how many slides you have
-  delay = 9000;        //delay between slides
+}</script><script type="text/javascript">var slide_count = parseInt("4"),  // how many slides you have
+  delay = parseInt("12000");        //delay between slides
 
 function autoplay(){
   var url = window.location.href;
